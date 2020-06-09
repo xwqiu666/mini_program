@@ -1,0 +1,112 @@
+/* components/cakemenu/cakemenu.wxss */
+.mainViewCls{
+  display: flex;
+  font-family:"Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+}
+
+.mainViewCls>.typevewCls{
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+
+.scrollviewInner{
+   display:flex;
+   justify-content:space-around;
+   flex-direction:column;
+}
+
+
+.menuItemCls{
+   display: flex;
+   height: 220rpx;
+   border: 5rpx solid;
+   border-color: white;
+}
+.menuItemCls>.itemInfoCls{
+   display: flex;
+   flex-direction: column;
+   margin-left: 10rpx;
+}
+.itemInfoCls>view:nth-of-type(1){
+   font-weight:bold;
+   flex:1;
+   display:flex;
+   align-items:flex-start;
+}
+.itemInfoCls>view:nth-of-type(2){
+   display:flex;
+   align-items:center;
+   flex:1;
+   font-weight:lighter;
+   font-size:small
+}
+.itemInfoCls>view:nth-of-type(3){
+   display:flex;
+   align-items:flex-end;
+   flex:1;
+   color:red
+}
+
+.mainViewCls>.menuviewCls{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.menuviewCls>view{
+   display: flex;
+   flex-direction: row;
+}
+
+.itemInfoCls{
+   display: flex;
+   flex-direction: column;
+}
+
+/* .typeItemCls{
+   height: 200rpx;
+   background-color: gray;
+   border: 2rpx solid;
+   border-color: white;
+}  */
+
+.itemoutterViewCls{
+    padding:10rpx 0;
+}
+
+.cakeImgCls{
+   padding:0 12rpx;
+}
+
+.typeItemCls{
+   background: #f2f2f2;
+   width:100%;
+   height: 100rpx;
+   /*flex 布局*/
+   display: flex;
+   /*实现垂直居中*/
+   align-items: center;
+   /*实现水平居中*/
+   justify-content: center;
+   border-color: white;
+   text-align: justify;
+   margin:0 auto;
+   color:gray;
+} 
+.typeItemTap{
+   background: white;
+   width: 100%;
+   color: red;
+   height: 100rpx;
+   /*flex 布局*/
+   display: flex;
+   /*实现垂直居中*/
+   align-items: center;
+   /*实现水平居中*/
+   justify-content: center;
+   border-color: white;
+   text-align: justify;
+   margin:0 auto;
+} 

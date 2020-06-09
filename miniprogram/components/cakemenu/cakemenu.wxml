@@ -1,0 +1,24 @@
+<!--components/cakemenu/cakemenu.wxml-->
+  <view class="mainViewCls">
+      <!-- 选择种类 -->
+      <view wx:if="{{showType == 'title'}}" class="typevewCls">
+            <view bindtap="tapTypeTab" style="height:{{lineHeight}}" data-name="{{item}}" data-index="{{idx}}" class="{{idx==current_idx?'typeItemTap':'typeItemCls'}}" wx:for="{{cakeInfo}}" wx:key="key" wx:for-index="idx" wx:for-item="item">
+            <view style="margin:auto 10rpx">{{item}}</view>
+              </view>
+      </view>
+
+
+      <view wx:if="{{showType == 'info'}}" class="menuviewCls">
+          <view class="itemoutterViewCls" wx:for="{{cakeInfo}}" wx:key="key">
+            <view class="cakeImgCls" style="height:{{lineHeight}}">
+                <image mode="aspectFill" src="{{item.fileId}}" 
+                style="width:{{lineHeight}};height:{{lineHeight}}"/>
+            </view>
+            <view class="itemInfoCls">
+                <view>{{item.cake_title}}</view>
+                <view>{{item.cake_info}}</view>
+                <view>￥{{item.cake_price}}</view>
+            </view>    
+          </view>
+      </view>
+  </view>

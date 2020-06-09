@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+      "cake-type":"../../components/cakemenu/cakemenu",
+
+      "notice-wrap":"../../components/notice-wrap/notice-wrap",
+
+      "mp-toptips": "../../miniprogram_npm/weui-miniprogram/toptips/toptips"
+  }
+}

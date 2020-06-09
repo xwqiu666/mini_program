@@ -1,0 +1,11 @@
+<!--components/notice-wrap/notice-wrap.wxml-->
+<!-- <view class='notice-wrap' hidden='{{hideNotice}}'>
+　　<view class='tongzhitext'>
+　　　　<text class="tongzhi-text">{{notice}}</text>
+　　</view>
+</view> -->
+
+<view class='notice-wrap'>
+　　　　           <view class="tongzhi-text" style="font-size:{{fontSize}};animation: remindMessage {{crossTime}} linear 2s infinite;">{{notice}}</view>
+</view>
+

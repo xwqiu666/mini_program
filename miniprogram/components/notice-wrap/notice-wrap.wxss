@@ -1,0 +1,35 @@
+/* components/notice-wrap/notice-wrap.wxss */
+@keyframes remindMessage {
+  0% {
+   -webkit-transform: translateX(90%);
+  }
+  
+  100% {
+   -webkit-transform: translateX(-180%);
+  }
+ }
+  
+ .tongzhi-text {
+  /* animation: remindMessage 100s linear infinite; */
+  width: 100%;
+  color: #d09868;
+  display: block;
+ }
+  
+ .notice-wrap {
+   display: flex;
+   align-items: center;
+   color: #d09868;
+ }
+  
+ .closeView {
+  width: 45rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 5rpx;
+  text-align: center;
+  font-size: 35rpx;
+ }
+ 
